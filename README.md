@@ -1,4 +1,4 @@
-# statsbomb-football-dashboard
+# touchline-dashboard
 A browser-based football analysis workspace. Load a StatsBomb match, compare players or teams, create charts, assemble a report, and export your work.
 
 No application accounts, database, API key, or server-side report storage are required. This repository uses **React**, **TypeScript**, and **Vite**.
