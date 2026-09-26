@@ -1,0 +1,10 @@
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import Home from './app/page';
+import Privacy from './app/privacy/page';
+import Terms from './app/terms/page';
+import {ThemeProvider} from './components/touchline/theme';
+import './app/globals.css';
+const path=window.location.pathname.replace(/\/+$/, '').replace(/\/index\.html$/, '');
+const Page=path.endsWith('/privacy')?Privacy:path.endsWith('/terms')?Terms:Home;
+createRoot(document.getElementById('root')!).render(<ThemeProvider><Page/></ThemeProvider>);
